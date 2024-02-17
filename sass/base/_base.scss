@@ -1,0 +1,40 @@
+/* reset browser behaviour */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* for easy calculations for rem */
+    /* percent of browser default font size to respect the user's settings */
+    /* font-size: 10px; */
+    /* this defines what rem is */
+    font-size: 62.5%; // 1rem = 10px, 10/16 = 62,5%
+
+    @include respond(tab-land) {
+        // width < 1200px
+        font-size: 56, 2%; // 1rem = 9px, 9/16 = 56,2%
+    }
+
+    @include respond(tab-port) {
+        // width < 900px
+        font-size: 50%; // 1rem = 10px, 10/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        // width > 1800px
+        font-size: 75%; // 1 rem = 12px, 12/16 = 75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+    ::selection {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
