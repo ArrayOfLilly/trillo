@@ -1,1 +1,1 @@
-All in one booking app.
+All in one booking app named Trillo.
