@@ -38,3 +38,15 @@
     // all remaining place, so we let grow
     flex: 1;
 }
+
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+    }
+}
