@@ -1,0 +1,49 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--dark-shadow);
+
+    // Test
+    min-height: 50rem;
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+
+    background-color: #fff;
+    border-bottom: var(--line);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    // align the .sidebar and the .hotel-view
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    // fixed width, no grows, no shrinks
+    flex: 0 0 18%;
+
+    // aligning the legal text
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    background-color: var(--color-grey-light-2);
+
+    // Test
+    min-height: 80rem;
+
+    // can grow, fill the remaining space in its container
+    flex: 1;
+}
