@@ -1,0 +1,48 @@
+.detail {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+}
+
+.description {
+    background-color: var(--color-white);
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+}
+
+.user-reviews {
+    flex: 1;
+
+    //center the button
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-1);
+    display: flex;
+    align-items: center;
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid var(--color-white);
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+}
