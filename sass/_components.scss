@@ -547,6 +547,12 @@
         padding: 2.5rem 0;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        line-height: 2.2rem;
+        padding-top: 2rem;
+    }
+
     &__book-now {
         font-size: 2rem;
         font-weight: 300;
