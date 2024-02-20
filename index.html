@@ -10,7 +10,7 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet" />
         <!-- DEVELOPMENT -->
-        <link rel="stylesheet" href="sass/main.css" />
+        <!-- <link rel="stylesheet" href="sass/main.css" /> -->
         <!-- PRODUCTION -->
         <link rel="stylesheet" href="css/style.min.css" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -26,8 +26,8 @@
                 <img src="img/logo.png" alt="trillo logo" class="logo" />
 
                 <!-- SEARCH -->
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels" />
+                <form action="#" class="search" autocomplete="on">
+                    <input type="text" class="search__input" placeholder="Search hotels" autocomplete="" />
                     <button class="search__button">
                         <svg class="search__icon">
                             <use href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -52,6 +52,18 @@
                     <div class="user-nav__user">
                         <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo" />
                         <span class="user-nav__user-name">Jonas</span>
+                        <!-- USER SETTINGS NAVIGATION -->
+                        <ul class="user-nav__user-menu">
+                            <li class="user-nav__user-option">
+                                <a href="#" class="user-nav__user-link">Profile settings</a>
+                            </li>
+                            <li class="user-nav__user-option">
+                                <a href="#" class="user-nav__user-link">Online support</a>
+                            </li>
+                            <li class="user-nav__user-option">
+                                <a href="#" class="user-nav__user-link">Logout</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </header>
@@ -102,13 +114,16 @@
                     <!-- GALLERTY -->
                     <div class="gallery">
                         <figure class="gallery__item">
-                            <img src="img/hotel-1.jpg" alt="photo of hotel 1" class="gallery__photo" />
+                            <img src="img/hotel-5.jpg" alt="photo of Hotel Las Palmas Altas" class="gallery__photo" />
+                            <figcaption class="gallery__caption"><span>Hotel de Palmas Altas</span></figcaption>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/hotel-2.jpg" alt="photo of hotel 2" class="gallery__photo" />
+                            <img src="img/hotel-4.jpg" alt="photo of Hotel de Mar" class="gallery__photo" />
+                            <figcaption class="gallery__caption"><span>Hotel de Mar Azurre</span></figcaption>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/hotel-3.jpg" alt="photo of hotel 3" class="gallery__photo" />
+                            <img src="img/hotel-11.jpg" alt="photo of Hotel de Mont Griffon" class="gallery__photo" />
+                            <figcaption class="gallery__caption"><span>Hotel de Mar Griffon</span></figcaption>
                         </figure>
                     </div>
 
